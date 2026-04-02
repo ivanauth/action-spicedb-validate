@@ -69,7 +69,7 @@ steps:
 
 | Input | Description | Required |
 |-------|-------------|----------|
-| `validationfile` | Path to a single YAML file to validate | No* |
+| `validationfile` | Path to a single validation file | No* |
 | `validationfiles` | List of paths to validate (newline or comma separated, supports glob patterns including `**`) | No* |
 | `fail-on-warn` | Whether validation warnings should cause the validation to fail | No |
 
