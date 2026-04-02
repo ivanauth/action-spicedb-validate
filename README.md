@@ -22,7 +22,7 @@ Add the following to any workflow:
 
 ```yaml
 steps:
-- uses: "actions/checkout@v4"
+- uses: "actions/checkout@v6"
 - uses: "authzed/action-spicedb-validate@v1"
   with:
     validationfile: "myschema.zaml"
@@ -37,7 +37,7 @@ You can validate multiple files using the `validationfiles` input:
 
 ```yaml
 steps:
-- uses: "actions/checkout@v4"
+- uses: "actions/checkout@v6"
 - uses: "authzed/action-spicedb-validate@v1"
   with:
     validationfiles: |
@@ -49,7 +49,7 @@ Comma-separated values are also supported:
 
 ```yaml
 steps:
-- uses: "actions/checkout@v4"
+- uses: "actions/checkout@v6"
 - uses: "authzed/action-spicedb-validate@v1"
   with:
     validationfiles: "schemas/schema1.zaml, schemas/schema2.zaml"
@@ -59,7 +59,7 @@ You can also use glob patterns (including recursive `**` patterns):
 
 ```yaml
 steps:
-- uses: "actions/checkout@v4"
+- uses: "actions/checkout@v6"
 - uses: "authzed/action-spicedb-validate@v1"
   with:
     validationfiles: "schemas/**/*.zaml"
